@@ -6,24 +6,26 @@ header{
     background-color: rgb(34, 34, 30);
 }
 table {
-    border-collapse: separate;
-    border: 2px solid rgb(200, 200, 200);
-    letter-spacing: 1px;
-    font-size: 0.8rem;
-  }
-  
-  td, th {
-    border: 1px solid rgb(224, 75, 17);
-    padding: 10px 20px;
-  }
-  
-  th {
-    background-color: rgb(235,235,235);
-  }
-  
-  td {
-    text-align: center;
-  }
+  border-collapse: collapse;
+  width: 100%;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+th {
+  background-color: #ee4d2d;
+  color: white;
+}
+
   
 .titulo{
     border-bottom: 1px solid black;
@@ -35,58 +37,61 @@ table {
 
 /* Estilos para a classe .box */
 .box {
-  border: 1px solid #ccc; /* Adiciona uma borda sólida cinza */
-  border-radius: 5px; /* Arredonda as bordas */
-  padding: 10px; /* Adiciona preenchimento interno */
-  margin-bottom: 20px; /* Adiciona margem inferior */
-  background-color: #f9f9f9; /* Define a cor de fundo */
-  max-width: 400px; /* Define a largura máxima */
-  margin: 20px auto 0; /* Centraliza horizontalmente e adiciona margem superior */
-  float: left; /* Alinha à esquerda */
-
+  border: 1px solid #ddd; /* Adiciona uma borda sólida cinza mais suave */
+  border-radius: 8px; /* Arredonda as bordas */
+  padding: 20px; /* Adiciona um preenchimento interno mais generoso */
+  margin-bottom: 30px; /* Aumenta a margem inferior para um espaçamento mais espaçoso */
+  background-color: #f6f6f6; /* Define uma cor de fundo ligeiramente mais clara */
+  max-width: 600px; /* Aumenta a largura máxima para melhor acomodar o conteúdo */
+  margin: 20px auto; /* Centraliza horizontalmente e remove a margem superior */
+  display: flex; /* Usa flexbox para melhor controle do layout */
+  flex-direction: column; /* Define a direção do layout como coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
 }
 
 /* Estilos para o título dentro da classe .box */
 .box h2 {
-  margin-bottom: 10px; /* Adiciona margem inferior */
+  margin-bottom: 20px; /* Aumenta a margem inferior para separação do conteúdo */
+  font-size: 24px; /* Aumenta o tamanho da fonte para um título mais proeminente */
 }
 
 /* Estilos para o formulário dentro da classe .box */
 .box .formulario {
-  margin-bottom: 15px; /* Adiciona margem inferior */
+  width: 100%; /* Define a largura do formulário como 100% */
 }
 
 /* Estilos para as etiquetas dentro da classe .box */
 .box label {
-  display: block; /* Exibe as etiquetas como blocos */
-  margin-bottom: 5px; /* Adiciona margem inferior */
+  margin-bottom: 10px; /* Ajusta a margem inferior para melhor espaçamento */
+  font-weight: bold; /* Adiciona negrito para maior destaque */
 }
 
 /* Estilos para os campos de texto e seleção dentro da classe .box */
 .box input[type="text"],
 .box select {
-  width: calc(100% - 20px); /* Define a largura como 100% menos o padding */
-  padding: 6px; /* Adiciona preenchimento interno */
-  margin-bottom: 10px; /* Adiciona margem inferior */
-  border: 1px solid #ccc; /* Adiciona uma borda sólida cinza */
-  border-radius: 3px; /* Arredonda as bordas */
-  box-sizing: border-box; /* Garante que o tamanho total inclua a borda e o preenchimento */
-  font-size: 14px; /* Tamanho da fonte */
+  width: 100%; /* Define a largura como 100% para preencher o contêiner */
+  padding: 12px; /* Aumenta o preenchimento interno para uma aparência mais espaçosa */
+  margin-bottom: 20px; /* Aumenta a margem inferior para melhor espaçamento */
+  border: 1px solid #ddd; /* Adiciona uma borda sólida cinza mais suave */
+  border-radius: 5px; /* Arredonda as bordas */
+  box-sizing: border-box; /* Mantém o tamanho total incluindo a borda e o preenchimento */
+  font-size: 16px; /* Aumenta o tamanho da fonte para melhor legibilidade */
 }
 
 /* Estilos para o botão de envio dentro da classe .box */
 .box button[type="submit"] {
-  background-color: blue; /* Define a cor de fundo como azul */
-  color: white; /* Define a cor do texto como branco */
-  padding: 8px 16px; /* Adiciona preenchimento interno */
+  background-color: #ee4d2d; /* Cor de fundo verde para destaque */
+  color: white; /* Cor do texto branco para contraste */
+  padding: 12px 24px; /* Aumenta o preenchimento para um botão mais visível */
   border: none; /* Remove a borda */
-  border-radius: 3px; /* Arredonda as bordas */
+  border-radius: 5px; /* Arredonda as bordas */
   cursor: pointer; /* Altera o cursor para indicar que é clicável */
+  transition: background-color 0.3s; /* Adiciona uma transição suave na mudança de cor de fundo */
 }
 
 /* Estilos de foco para o botão de envio dentro da classe .box */
 .box button[type="submit"]:hover {
-  background-color: darkblue; /* Altera a cor de fundo quando o mouse passa por cima */
+  background-color: #ff3b30; /* Cor de fundo ligeiramente mais escura quando passa o mouse */
 }
 
 #filtrar-tabela{
@@ -97,5 +102,28 @@ table {
 
 .invisivel{
   display:none;
+}
+
+/* Botao para consumir API */
+.botao {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #ee4d2d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+  background-color: #ff3b30;
+}
+
+.botao:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
 }
 

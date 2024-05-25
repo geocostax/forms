@@ -2,42 +2,42 @@
     "encomendas":[
         {
             "nome": "Bruce Wayne",
-            "prod": "Pulseira de Cristal - Preta",
-            "quant": 2,
-            "unit": 20,
+            "produto": "Pulseira de Cristal - Preta",
+            "quantidade": 2,
+            "valorUnitario": 20,
             "tot": 40
         },
 
         {
             "nome": "Buzeira",
-            "prod": "Corrente de Ouro - 18K",
-            "quant": 3,
-            "unit": 40,
+            "produto": "Corrente de Ouro - 18K",
+            "quantidade": 3,
+            "valorUnitario": 40,
             "tot": 120
 
         },
 
         {
             "nome": "Renato Cariani",
-            "prod": "Barrinha Bold",
-            "quant": 8,
-            "unit": 10,
+            "produto": "Barrinha Bold",
+            "quantidade": 8,
+            "valorUnitario": 10,
             "tot": 80
         },
 
         {
             "nome": "Cassio",
-            "prod": "Shamppo",
-            "quant": 1,
-            "unit": 50,
+            "produto": "Shamppo",
+            "quantidade": 1,
+            "valorUnitario": 50,
             "tot": 50
         },
 
         {
             "nome": "Gabigol",
-            "prod": "Camisa do Corinthians",
-            "quant": 1,
-            "unit": 150,
+            "produto": "Camisa do Corinthians",
+            "quantidade": 1,
+            "valorUnitario": 150,
             "tot": 150
         }
     ]

@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
         colunaNome.innerHTML = nome;
         colunaProduto.innerHTML = produto;
         colunaQuantidade.innerHTML = quantidade;
-        colunaValorUnitario.innerHTML = valorUnitario; // Inserindo valor formatado
+        colunaValorUnitario.innerHTML = valorUnitarioFormatado; // Inserindo valor formatado
         colunaTotal.innerHTML = (quantidade * valorUnitario).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }); // Formatando o total também
         
         // Limpa o formulário após o envio
